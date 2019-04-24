@@ -43,74 +43,191 @@
   font-family: "微软雅黑";
 }
 
-.header .nav li a:hover{
-    color: orange;
-    font-weight: 700;
+.header .nav li a:hover {
+  color: orange;
+  font-weight: 700;
 }
 /*  头部结束 */
 
 /* 主体开始 */
- .main .banner a img{
-     width: 100%;
-     /* max-width: 1638px; */
-     height: 600px;
-     display: block;
- }
+.main .banner a img {
+  width: 100%;
+  /* max-width: 1638px; */
+  height: 600px;
+  display: block;
+}
 
- .main .topLayer{
-     width: 100%;
-     height: 520px;
-     background-color: #000;
-     position: absolute;
-     top: 80px;
-     left: 0;
-     opacity: 0.1;
- }
+.main .topLayer {
+  width: 100%;
+  height: 520px;
+  background-color: #000;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  opacity: 0.1;
+}
 
- .main .topLayer-inner{
-     width: 510px;
-     height: 311px;
-     /* background-color: red; */
-     position: absolute;
-     top: 100px;
-     left: 50%;
-     margin-left: -250px;
-     /* margin-bottom: -120px; */
-     z-index: 9;
- }
+.main .topLayer-inner {
+  width: 510px;
+  height: 311px;
+  /* background-color: red; */
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -250px;
+  /* margin-bottom: -120px; */
+  /* z-index: 999999; */
+}
 
- .main .topLayer-inner input{
-     width: 505px;
-     height: 39px;
-     border: 2px solid #808080; 
-     background-color: #000; 
-     opacity: 0.5;
-     margin-top: 20px;
- }
+.main .topLayer-inner input {
+  width: 505px;
+  height: 39px;
+  border: 2px solid #808080;
+  background-color: #000;
+  opacity: 0.5;
+  margin-top: 20px;
+}
 
- textarea {
-     width: 505px;
-     height: 115px;
-     border: 2px solid #808080;
-     background-color: #000; 
-     opacity: 0.5;
-     margin-top: 20px;   
- }
+textarea {
+  width: 505px;
+  height: 115px;
+  border: 2px solid #808080;
+  background-color: #000;
+  opacity: 0.5;
+  margin-top: 20px;
+}
 
- button{
-     width: 123px;
-     height: 39px;
-     border: 2px solid #808080;
-     /* border-radius: 8px; */
-     text-align: center;
-     font-size: 14px;
-     font-family: "微软雅黑";
-     font-weight: 700;
-     clear: both;
-     color: #bdb099;
-     opacity: 0.3;
-     background: #000;
-     margin-left: 38%;
- }
+button {
+  width: 123px;
+  height: 39px;
+  border: 2px solid #808080;
+  /* border-radius: 8px; */
+  text-align: center;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  font-weight: 700;
+  clear: both;
+  color: #bdb099;
+  opacity: 0.3;
+  background: #000;
+  margin-left: 38%;
+}
+
+.about {
+  width: 100%;
+  height: 700px;
+  background-color: #fff;
+}
+
+.about h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.about .line {
+  width: 40px;
+  border: 2px solid #07cbc9;
+  /* text-align: center; */
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.about .word {
+  margin-top: 20px;
+}
+.about .word p {
+  text-align: center;
+  color: #797979;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "微软雅黑";
+}
+
+.about .about-middle {
+  width: 1085px;
+  height: 450px;
+  /* background-color: red; */
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.about .about-middle .m-l {
+  width: 204px;
+  height: 450px;
+  /* background-color: green; */
+  float: left;
+}
+
+.about .about-middle .m-m {
+  width: 569px;
+  height: 450px;
+  /* background-color: blue; */
+  float: left;
+}
+
+.about .about-middle .m-r {
+  width: 282px;
+  height: 450px;
+  /* background-color: red; */
+  float: right;
+  margin-right: 20px;
+}
+
+.about .about-middle .m-l p {
+  font-size: 20px;
+  font-family: "微软雅黑";
+  line-height: 24px;
+  padding-left: 60px;
+  /* font-weight: 700; */
+}
+
+.about .about-middle .m-m img {
+  width: 569px;
+  height: 450px;
+}
+
+.about .about-middle .m-r .num1 {
+  width: 238px;
+  height: 142px;
+  border: 1px solid #07cbc9;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.about .about-middle .m-r .num1 p {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.about .about-middle .m-r .num1 p:nth-child(2) {
+  width: 40px;
+  border: 2px solid #07cbc9;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about .about-middle .m-r .p3 {
+  margin-top: 18px;
+}
+
+.main .pic-list{
+  width: 100%;
+  height: 800px;
+  /* background-color: red; */
+  margin-top: 50px;
+}
+
+.main .pic-list dl{
+  width: 25%;
+  height: 400px;
+  background-color: green;
+  float: left;
+}
+
+.main .pic-list div img{
+  width: 25%;
+  height: 400px;
+  float: left;
+}
 
 /* 主体结束 */
