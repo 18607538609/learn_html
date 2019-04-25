@@ -220,7 +220,7 @@ button {
 .main .pic-list dl{
   width: 25%;
   height: 400px;
-  background-color: green;
+  background-color: #07cbc9;
   float: left;
 }
 
@@ -229,5 +229,106 @@ button {
   height: 400px;
   float: left;
 }
+
+.main .pic-list dl{
+  width: 25%;
+  height: 400px;
+  /* padding-left: 45px; */
+  /* background: red; */
+}
+
+.main .pic-list dl dt{
+  font-size: 18px;
+  font-family: "微软雅黑";
+  font-weight: 700;
+  color: #fff;
+  text-indent: 1.5em;
+  padding-bottom: 27px;
+  padding-top: 30px;
+  /* background: red; */
+}
+
+.main .pic-list dl .desc1{
+  font-size: 14px;
+  font-family: "微软雅黑";
+  line-height: 25px;
+  color: #fff;
+  text-indent: 2em;
+  font-weight: 700;
+}
+
+.main .pic-list dl .desc2{
+  font-size: 12px;
+  font-family: "微软雅黑";
+  line-height: 25px;
+  color: #dddbd7;
+  text-indent: 2em;
+  line-height: 20px;
+  padding-top: 15px;
+}
+
+
+
+
+.main .pic-list .btn{
+  width: 109px;
+  height: 45px;
+  background-color: #000;
+  text-align: center;
+  line-height: 45px;
+ margin-top: 46px;
+}
+
+.main .gallery{
+  width: 70%;
+  height: 913px;
+  background: red;
+  margin: 0 auto;
+}
+
+.main .gallery p{
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  font-family: "微软雅黑";
+  text-align: center;
+  margin-top: 65px;
+}
+
+.main .gallery .line2{
+  width: 40px;
+  border: 2px solid #07cbc9;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.main .gallery a{
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  text-align: center;
+  color: #dddbd7;
+  display: block;
+  line-height: 5px;
+}
+
+.main .gallery .a1{
+  margin-top: 20px;
+}
+
+.main .gallery .pic-list2{
+  width: 100%;
+  height: auto;
+  margin-top: 43px;
+}
+
+
+
+.main .gallery .pic-list2 .pic img{
+  width: 33.3%;
+  height: 240px;
+  float: left;
+}
+
 
 /* 主体结束 */
