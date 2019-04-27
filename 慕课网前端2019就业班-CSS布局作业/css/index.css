@@ -142,6 +142,8 @@ button:hover{
 
 .about .side p{
   padding: 20px;
+  font-size: 14px;
+  font-family: "微软雅黑";
 }
 
 .about .side button{
@@ -149,7 +151,7 @@ button:hover{
   height: 43px;
   border: 1px solid gray;
   margin-left: 20px;
-  z-index: -1;
+  z-index: 999999;
 }
 
 
