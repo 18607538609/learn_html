@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,5 +21,37 @@
     <div>我是div标签里面的文字,我的字体大小是20px,字体颜色是红色</div>
     <h3>我是标题3,字体颜色是蓝色</h3>
     <p>我是p标签里面的文字, 我的字体大小是20px, 字体颜色是红色</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .li{list-style:none;height:50px;line-height:50px;width:100px;background-color:lightblue;text-align:center;}
+  </style>
+</head>
+<body>
+    <script>
+      //在此处补充代码
+    //   debugger;
+      var ul = null, li = null, fragment=null, comment;
+      ul = document.createElement("ul");
+      fragment = document.createDocumentFragment();
+      comment = document.createComment(" A Comment");
+      
+      for(i=0;i<3;i++){
+          li = document.createElement("li");
+          var text = document.createTextNode("第" + (i+1) + "个li");
+          document.write(ul.appendChild(li));
+          li.appendChild(text);
+          fragment.appendChild(li);
+      }
+      ul.appendChild(fragment);
+      document.body.insertBefore(comment, document.body.firstChild);
+    </script>
+    
 </body>
 </html>
