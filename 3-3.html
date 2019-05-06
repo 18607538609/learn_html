@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        window.onload = function(){
+            var oHtml = document.documentElement;
+            var p = document.getElementById("p1");
+            var txt = p.childNodes[0];
+            // var oHead = oHtml.firstChild;
+            // var oHead = oHtml.childNodes[0];
+             oHead = oHtml.childNodes.item(0);
+            // console.log(oHtml.tagName);
+            // console.log(oHead);
+    
+            var oBody = oHtml.childNodes[1];
+    
+            var oBody = oHtml.childNodes.item(1);
+            // console.log(oBody);
+               
+            //    console.log(oHead.parentNode == oHtml);
+            //    console.log(oBody.parentNode == oHtml);
+         
+            //    console.log(oBody.previousSibling == oHead);
+            //    console.log(oHead.nextSibling == oBody);
+    
+            console.log(p.ownerDocument == document);
+            console.log(p.hasChildNodes()); 
+            console.log(txt.hasChildNodes());
+        }
+           
+    
+        </script>
+</head>
+<body>
+   
+
+    <p id="p1">文本叶子节点</p>
+</body>
+</html>

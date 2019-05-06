@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      window.onload = function() {
+        box = document.getElementById("box");
+        nodes = box.childNodes;
+        //   console.log(nodes[1]);
+        //   console.log(nodes.item(1));
+        //   console.log(nodes.keys(1));
+        //   console.log(nodes.values(1));
+        function makeArray(nodeList) {
+          var arr = null,
+            len = null;
+          try {
+            return Array.prototype.slice.call(nodeList);
+          } catch (e) {
+            arr = [];
+            len = nodeList.length;
+            for (var i = 0; i < len; i++) {
+              arr.push(nodeList[i]);
+            }
+          }
+          // var arr = [];
+          // var len = nodeList.length;
+          // for(var i = 0; i < len; i++){
+          //     arr.push(nodeList[i]);
+          // }
+          // return arr;
+          return arr;
+        }
+
+        var newNodeList = makeArray(nodes);
+        newNodeList.push("<li>节点四</li>");
+        console.log(newNodeList);
+      };
+    </script>
+  </head>
+  <body>
+    <ul id="box">
+      <li>节点一</li>
+      <li>节点二</li>
+      <li>节点三</li>
+    </ul>
+  </body>
+</html>

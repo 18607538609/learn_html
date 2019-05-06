@@ -37,7 +37,7 @@
     <script>
       //在此处补充代码
     //   debugger;
-      var ul = null, li = null, fragment=null, comment;
+      var ul = null, li = null, fragment=null, comment, i;
       ul = document.createElement("ul");
       fragment = document.createDocumentFragment();
       comment = document.createComment(" A Comment");
@@ -45,6 +45,7 @@
       for(i=0;i<3;i++){
           li = document.createElement("li");
           var text = document.createTextNode("第" + (i+1) + "个li");
+          document.write(text);
           document.write(ul.appendChild(li));
           li.appendChild(text);
           fragment.appendChild(li);

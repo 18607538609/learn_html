@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+      window.onload = function(){
+          debugger;
+            var str = "";
+            function travel(space, node){
+                // space参数 节点之间分隔的字符串
+                // node参数  遍历的当前节点
+                if (node.tagName) { //判断如果当前节点是标签, 不是空的, 就拼接字符串
+                    str += space + node.tagName + "<br/>";
+                }
+
+                var len = node.childNodes.length; // 保存当前节点的子节点的个数
+                for (var i = 0; i < len; i++) { //遍历节点的子节点
+                   travel(space + "-", node.childNodes[i]);
+                }
+            }
+            travel("", document);
+            document.write(str);
+
+      };
+    
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="button" id="button" name="button" value="点我!!!">
+    </form>
+</body>
+</html>
