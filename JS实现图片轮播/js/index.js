@@ -6,6 +6,11 @@ window.onload = function(){
         pics = byId("banner").getElementsByTagName('div'),
         dots = byId("dots").getElementsByTagName("span"),
         main = byId("main"),
+        banner = byId("banner"),
+        menuContent = byId("menu-content"),
+        menuItems = menuContent.getElementsByClassName("menu-item"),
+        subMenu = byId("sub-menu"),
+        innerBox = subMenu.getElementsByClassName("inner-box"),
         picLen = pics.length;
         // console.log(picLen); //3
         
@@ -106,6 +111,57 @@ for(var i = 0; i < picLen; i++){
 }
 
 
+// 鼠标滑过主菜单
+for(var i = 0, idx; i<menuItems.length; i++){
+    // 给所有主菜单定义属性, 标明它的索引
+    menuItems[i].setAttribute("data-index", i);
+    addHandler(menuItems[i], "mouseover", function(){
+        // console.log(i);
+        // 显示子菜单所在的背景
+        subMenu.className = "sub-menu";
+        
+        // 获取当前主菜单的索引
+        idx = this.getAttribute("data-index");
+        // alert(idx);
+        // 遍历所有子菜单innerBox, 将其隐藏
+        for(var i = 0; i < innerBox.length; i++){
+            innerBox[i].style.display = "none";
+
+            // 所有主菜单样式恢复原样(取消背景)
+            menuItems[i].style.background = "none";
+        }
+
+        // 找到当前子菜单让其显示出来
+        innerBox[idx].style.display = "block";
+
+        // 给鼠标滑过的主菜单设置透明背景样式
+        menuItems[idx].style.background = "rgba(0, 0, 0, .1)";
+
+
+    })
+};
+
+// 鼠标离开banner隐藏子菜单
+addHandler(banner, "mouseout", function(){
+    // alert("m")
+    subMenu.className = "sub-menu hide";
+});
+
+// 鼠标离开主菜单menuContent隐藏子菜单
+addHandler(menuContent, "mouseout", function(){
+    subMenu.className = "sub-menu hide";
+});
+
+// 鼠标滑入子菜单, 子菜单显示
+addHandler(subMenu, "mouseover", function(){
+    this.className = "sub-menu";
+});
+
+// 鼠标离开子菜单, 子菜单隐藏
+addHandler(subMenu, "mouseout", function(){
+    this.className = "sub-menu hide";
+});
+
 // 鼠标划入main, 停止轮播
  addHandler(main, "mouseover", stopAutoPlay);
 
@@ -114,6 +170,5 @@ addHandler(main, "mouseout", startAutoPlay);
 
 // 自动开启轮播
 startAutoPlay();
-
 };
 
