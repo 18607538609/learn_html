@@ -129,3 +129,86 @@ BEM 设计模式
     z-index: 1;
     opacity: 0.8;
 }
+
+/* 第二屏开始 */
+.screen-2{
+    background-color: #fafafa;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen-2__heading{
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 46px;
+    color: #f01400;
+    text-align: center;
+    padding-top: 96px;
+}
+
+.screen-2__subheading{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2c3137;
+    text-align: center;
+    padding-top: 25px;    
+}
+
+.screen-2__phone{
+    width: 928px;
+    height: 873px;
+    background: url("../images/screen-2-phone.png") no-repeat center;
+    position: absolute;
+    left: 50%;
+    margin-left: -464px;
+    z-index: 2;
+    bottom: -345px;
+}
+
+.screen-2__point{
+    width: 108px;
+    height: 22px;
+    padding-right: 112px;
+    font-size: 22px;
+    line-height: 22px;
+    position: absolute;
+    color: #4d555d;
+    background: url("../images/icon-point-right.png") no-repeat right;
+}
+
+.screen-2__point_custom_right{
+    width: 108px;
+    height: 22px;
+    padding: 0 0 0 112px;
+    font-size: 22px;
+    line-height: 22px;
+    position: absolute;
+    color: #4d555d;
+    background: url("../images/icon-point-left.png") no-repeat left;
+
+}
+
+.screen-2__point_i_1{
+    top: 150px;
+    left: -164px;
+}
+.screen-2__point_i_2{
+    top: 30px;
+    right: 130px;
+}
+.screen-2__point_i_3{
+    top: 330px;
+    right: 30px;
+}
+
+/* 第二屏结束 */
+
+/* 第三屏开始 */
+.screen-3{
+    background: #f01400;
+    height: 800px;
+    position: relative;
+}
+/* 第三屏结束 */
