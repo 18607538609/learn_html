@@ -207,8 +207,90 @@ BEM 设计模式
 
 /* 第三屏开始 */
 .screen-3{
-    background: #f01400;
+    /* background: #f01400; */
     height: 800px;
     position: relative;
+    overflow: hidden;
+    background: url("../images/bg-screen-3.png") no-repeat center;
+    background-size: cover;
 }
+
+.screen-3__wrap{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.screen-3__heading{
+    font-size: 46px;
+    line-height: 46px;
+    color: #fff;
+    text-align: left;
+    padding-top: 94px;
+}
+
+.screen-3__subheading{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    text-align: left;
+    padding-top: 25px;
+}
+
+.screen-3__phone{
+    width: 756px;
+    height: 873px;
+    background: url("../images/screen-3-phone.png") no-repeat center top;
+    position: absolute;
+    right: 0;
+    top: 195px;
+    z-index: 2;
+}
+
+
+.screen-3__features{
+    /* position: relative; */
+    position: absolute;
+    top: 395px;
+    left: 0;
+    width: 320px;
+    height: 280px;
+}
+.screen-3__features__item{
+    width: 138px;
+    height: 118px;
+    border: 1px solid #cb7173;
+    margin: 0 20px 20px 0;
+    float: left;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+.screen-3__features__item__number{
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 28px 0 8px;
+}
+.screen-3__features__item__desc{
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
 /* 第三屏结束 */
+
+
+/* 第四屏开始 */
+.screen-4{
+    background: #fafafa;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+} 
+
+
+/* 第四屏结束 */
