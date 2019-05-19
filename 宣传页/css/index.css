@@ -286,11 +286,165 @@ BEM 设计模式
 
 /* 第四屏开始 */
 .screen-4{
-    background: #fafafa;
+    background-color: #fff;
     height: 800px;
     position: relative;
     overflow: hidden;
 } 
 
 
+.screen-4__wrap{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.screen-4__heading{
+    font-size: 46px;
+    line-height: 46px;
+    color: #f01400;
+    text-align: center;
+    padding-top: 135px;
+}
+.screen-4__subheading{
+    font-size: 14px;
+    color: #464a41;
+    text-align: center;
+    padding-top: 29px;
+    line-height: 28px;
+}
+.screen-4__type{
+    width: 1260px;
+    height: 270px;
+    position: absolute;
+    top: 304px;
+    margin: 0 auto;
+    margin-left: 30px;
+}
+.screen-4__type__item{
+    width: 220px;
+    height: 270px;
+    margin-right: 90px;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+}
+
+.screen-4__type__item_i_1{
+    background: url("../images/phone-1.png") no-repeat left top;
+}
+
+.screen-4__type__item_i_2{
+    background: url("../images/phone-2.png") no-repeat left top;
+}
+
+.screen-4__type__item_i_3{
+    background: url("../images/phone-3.png") no-repeat left top;
+}
+
+.screen-4__type__item_i_4{
+    background: url("../images/phone-4.png") no-repeat left top;
+}
+
+.screen-4__type__item__color{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #2c3238;
+    position: absolute;
+    bottom: -44px;
+
+}
+.screen-4__type__item__storage{
+    width: 100%;
+    height: 12px;
+    line-height: 12px;
+    font-size: 14px;
+    color: #a4a9ae;
+    position: absolute;
+    bottom: -66px;
+}
+
+
+
 /* 第四屏结束 */
+
+
+/* 第五屏开始 */
+.screen-5{
+    height: 800px;
+    background-color: #d9dde1;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.screen-5__bg{
+    width: 1920px;
+    height: 433px;
+    background: url("../images/bg-screen-5.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    bottom: -100px;
+}
+
+.screen-5__heading{
+    font-size: 46px;
+    line-height: 46px;
+    color: #f01400;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.screen-5__subheading{
+    font-size: 14px;
+    line-height: 28px;
+    color: #2c3137;
+    text-align: center;
+    padding-top: 25px;
+}
+/* 第五屏结束 */
+
+/* 第六屏开始 */
+.screen-buy{
+    height: 320px;
+    height: 80px;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    background: #2b333b url("../images/bg-screen-buy.png") center no-repeat;
+    text-align: center;
+}
+
+.screen-buy__button{
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #f01414;
+    display: inline-block;
+    border-radius: 3px;
+    /* transition: all 0.5s; */
+}
+
+.screen-buy__button:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+/* 第六屏结束 */
+
+/* 底部开始 */
+.footer{
+    height: 80px;
+    line-height: 80px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #07111b;
+}
+/* 底部结束 */
