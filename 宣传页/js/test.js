@@ -45,15 +45,31 @@ function setScreenAnimate(screenCls) {
         }
 
         // 切换所有 animateElements 的 done -> init A A_init
-        if(isAnimateDone === true){
-            for(var i = 0, len = animateElements.length; i< len; i++)
-                var element = document.querySelector(animateElements[i]);
-                var baseCls = element.getAttribute("class");
-                element.setAttribute("calss", baseCls.replace("_animate_done", "_animate_init"))
-        }
-        isAnimateDone = false;
-        return
-    }
-}
+        // if(isAnimateDone === true){
+        //     for(var i = 0, len = animateElements.length; i< len; i++){
+        //         var element = document.querySelector(animateElements[i]);
+        //         var baseCls = element.getAttribute("class");
+        //         element.setAttribute("calss", baseCls.replace("_animate_done", "_animate_init"));
+        //     }
+        //     isAnimateDone = false;
+        //     return;
+        // }
 
-setScreenAnimate(".screen-1")
+        if(isAnimateDone === true){
+            for(var i = 0, len = animateElements.length ;i < len;i++){
+              var element = document.querySelector(animateElements[i]);
+              var baseCls = element.getAttribute('class');
+              element.setAttribute('class',baseCls.replace('_animate_done','_animate_init'));
+            }
+            isAnimateDone = false;
+            return ;
+          }
+      
+        }
+        
+    }
+
+
+for( var k in screenAnimateElements){
+    setScreenAnimate(k);
+    }
