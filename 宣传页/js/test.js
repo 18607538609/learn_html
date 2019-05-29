@@ -1,10 +1,10 @@
 
 var screenAnimateElements = {
-    ".screen-1": [
-        ".screen-1__heading",
-        ".screen-1__phone",
-        ".screen-1__shadow"
-    ]
+   ".screen-1": [
+       ".screen-1__heading",
+       ".screen-1__phone",
+       ".screen-1__shadow"
+   ]
 };
 
 function setScreenAnimate(screenCls) {
@@ -29,7 +29,7 @@ function setScreenAnimate(screenCls) {
 
                     element.setAttribute("class", baseCls + " " + animateElements[i].substr(1) + "_animate_init");
                     isSetAnimateClass = true;
-                    return;
+                    return ;
             }
         }
 
@@ -41,7 +41,7 @@ function setScreenAnimate(screenCls) {
                 element.setAttribute("class", baseCls.replace("_animate_init", "_animate_done"));
             }
             isAnimateDone = true;
-            return;
+            return ;
         }
 
         // 切换所有 animateElements 的 done -> init A A_init
@@ -69,7 +69,6 @@ function setScreenAnimate(screenCls) {
         
     }
 
-
-for( var k in screenAnimateElements){
+for(k in screenAnimateElements){
     setScreenAnimate(k);
     }
