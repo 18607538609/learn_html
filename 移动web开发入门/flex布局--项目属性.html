@@ -126,6 +126,32 @@
         .box-7-6 .box-item {
             height: auto;
         }
+
+        /* order 属性 */
+        .box-8 .order{
+            order: -1;
+            /* position: relative; */
+        }
+        .box-item div {
+            font-size: 14px;
+            position: relative;
+            top: -150px;
+        }
+
+        /* flex-grow 属性 */
+        .box-9-1 .box-item{
+            flex-grow: 1;
+        }
+        
+        .box-9-1 .grow-2{
+            flex-grow: 2;
+        }
+
+        .box-9-2 .grow {
+            flex-grow: 1;
+        }
+
+
     </style>
 </head>
 <body>
@@ -502,6 +528,70 @@
         <div class="box-item">8</div>
         <div class="box-item">9</div>
     </div>
+</div>
+
+<!-- 项目属性 -->
+<div>
+    <h2 id="flex4">四、项目的属性</h2>
+    <p>
+        <a href="">1. order</a>
+        <a href="">2. flex-grow</a>
+        <a href="">3. flex-shrink</a>
+        <a href="">4. flex-basis</a>
+        <a href="">5. flex</a>
+        <a href="">6. align-self</a>
+    </p>
+    <h3 id="flex4-1">1、order 属性</h3>
+    <p>
+        order 属性定义项目的排列顺序<br>
+        数值越小,  排列越靠前, 默认为0
+    </p>
+    <p>
+        <code>
+            .item {
+                order: &lt;integer&gt;;
+            }
+        </code>
+    </p>
+
+    <div class="box box-8">
+        <div class="box-item">1</div>
+        <div class="box-item">2</div>
+        <div class="box-item">3</div>
+        <div class="box-item order">4 <div>(order: -1)</div></div>
+    </div>
+
+    <h3 id="flex4-2">2、flex-grow 属性</h3>
+    <p>flex-grow 属性定义项目的放大比例, 默认为0 , 即如果存在剩余空间, 也不放大</p>
+    <p>
+        如果所有项目的 flex-grow 的属性值都为1 , 则它们等分剩余空间 (如果有话)<br>
+
+        如果一个项目的 flex-grow 属性值为2, 其他项目都为1 , 则前者占据剩余空间将比其他项多一倍
+    </p>
+
+    <p>
+        <code>
+            .item {
+                flex-grow: &lt;number&gt; /* default  0 */
+            }
+        </code>
+    </p>
+
+    <div class="box box-9-1">
+        <div class="box-item">1 <div>flex-grow: 1</div></div>
+        <div class="box-item grow-2">2 <div>flex-grow: 2</div></div>
+        <div class="box-item">3 <div>flex-grow: 1</div></div>
+    </div>
+
+    <p>
+            如果有的项目有 flex-grow 属性，有的项目有 width 属性，<br>
+            有 flex-grow 属性的项目将等分剩余空间
+        </p>
+        <div class="box box-9-2">
+            <div class="box-item grow">1 <div>flex-grow: 1</div></div>
+            <div class="box-item">2 <div>width: 200px</div></div>
+            <div class="box-item grow">3 <div>flex-grow: 1</div></div>
+        </div>
 </div>
 </body>
 </html>
